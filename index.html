@@ -30,8 +30,9 @@
            }
            //uditok feltoltese
            let uditok= document.getElementById("bal");
-           for (let i = 0; i < 3  ; i++) {
-               uditok.innerHTML+='<img src="cocacola.jpg">';
+           let udito_kepek=["apenta.jpg","cocacola.png","cola.jpg","hellkave.jpg","kinley.jpg","marka.jpg"]
+           for (let i =0 ; i <=udito_kepek.length  ; i++) {
+               uditok.innerHTML+='<div> <img src="'+udito_kepek[i]+'"> '+(i+1)+ '</div>';
                
            }
         </script>

@@ -48,10 +48,15 @@
     margin-top: 5px;
     margin-bottom: 5px;
 }
-.bal img{
-    width:calc(100% / 3);
-    height:calc(100% / 3);
+.bal div img{
+    width:100%;
+    height: calc(100%/3);
+    
 }
-
+.bal div{
+    width: calc(100%/3);
+    float: left;
+    text-align: center;
+}
 
 
