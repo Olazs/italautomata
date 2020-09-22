@@ -13,7 +13,10 @@
             <div class="jobb">
                 <div class="kepernyo" id="kepernyo"></div>
                 <div class="gombok" id="gombok"></div>      
-                <button>OK</button>
+                <button onclick="vasarlas()">OK</button>
+                <div class="tarolo" id="tarolo">
+                    
+                </div>
                 
             </div>
         </div>
@@ -23,10 +26,15 @@
            for(let i=1; i<=9; i++){
                gomb_tarolo.innerHTML+='<button onclick="katt('+i+')">' + i +'</button>';
            }
+           let kivalasztott= -1;
 
            function katt(szam){
               // alert(szam);
               document.getElementById("kepernyo").innerHTML= szam;
+              kivalasztott=szam;
+           }
+           function vasarlas(){
+               alert("megvetted a kivalasztott szamu uditot");
            }
            //uditok feltoltese
            let uditok= document.getElementById("bal");
